@@ -1,0 +1,106 @@
+
+    /*
+     * _scaffolding
+     *
+     */
+
+
+
+
+
+    *,
+    *:before,
+    *:after {
+		box-sizing: border-box;
+        letter-spacing: .05em;
+    }
+
+
+
+
+    img {
+        max-width: 100% !important;
+    }
+
+
+
+
+
+    body {
+        background-color: white;
+        min-width: $min-width;
+        font-family: $font-stack;
+        font-weight: $font-weight--regular;
+        color: $font-colour;
+        //letter-spacing: .05em;
+    }
+
+
+
+
+    a {
+        color: #026AC2;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            opacity: .7;
+        }
+
+        &:focus {
+            //color: green;
+        }
+
+        &:active {
+            //color: green;
+        }
+
+        &:visited {
+            //color: purple;
+        }
+    }
+
+
+
+
+
+    p {line-height: 1.3em;}
+    p:first-of-type {margin-top: 0;}
+    p:last-of-type {margin-bottom: 0;}
+
+
+
+
+    .#{$prefix}inner {
+        width: $width;
+        max-width: $max-width;
+        //min-width: $min-width;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: $padding-unit;
+        padding-right: $padding-unit;
+
+        @include mq($from: tablet) {
+            width: auto;
+        }
+    }
+
+
+
+
+    button,
+    input[type='submit'],
+    input[type='button'] {
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+
+
+
+	label[for]{
+		cursor: pointer;
+	}
